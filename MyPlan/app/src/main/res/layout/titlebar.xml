@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff16b7eb">
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="未完成"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/addPlan"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/add"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

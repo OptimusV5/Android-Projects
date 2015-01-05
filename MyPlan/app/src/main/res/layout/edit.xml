@@ -1,0 +1,277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/head"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:text="Details"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="always">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="19dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="主题"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:background="@xml/subjectstytle"
+            android:paddingLeft="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"
+            android:hint="subject">
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="类别"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dropDownSelector="#eeeeee"
+            android:entries="@array/spingarr"
+            android:id="@+id/spinner" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="时间"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="130dp"
+            android:layout_height="fill_parent"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="14dp" />
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/tirangle"/>
+        <TextView
+            android:id="@+id/timeView"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center_vertical" />
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:paddingRight="5dp"
+            android:src="@drawable/tirangle"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5" />
+    <EditText
+        android:id="@+id/editText2"
+        android:background="@xml/editstyle"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:textColor="#000000"
+        android:gravity="top"
+        android:textCursorDrawable="@null"
+
+        android:hint="   click to edit" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_delete"
+                android:layout_width="64dp"
+                android:layout_height="35dp"
+                android:paddingTop="7dp"
+                android:src="@drawable/delete" />
+
+            <TextView
+                android:id="@+id/textView_undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp"
+                android:text="删除"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_done"
+                android:layout_width="64dp"
+                android:layout_height="35dp"
+                android:paddingTop="7dp"
+                android:src="@drawable/finish" />
+
+            <TextView
+                android:id="@+id/textView_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp"
+                android:text="完成"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_alarm"
+                android:layout_width="64dp"
+                android:layout_height="35dp"
+                android:paddingTop="7dp"
+                android:src="@drawable/alarm" />
+
+            <TextView
+                android:id="@+id/textView_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp"
+                android:text="提醒"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/min"
+                android:layout_width="64dp"
+                android:layout_height="35dp"
+                android:paddingTop="7dp"
+                android:src="@drawable/save" />
+
+            <TextView
+                android:id="@+id/tmun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp"
+                android:text="保存"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

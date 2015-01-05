@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#e0e0e0"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="6dp">
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@xml/searchbuttonstyle"
+            android:text="搜索"
+            android:textColor="#b0b0b0" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_weight="1"
+        android:background="#f7f7f7"
+        android:childDivider="#999999"
+        android:listSelector="#dddddd"
+        android:groupIndicator="@null"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:height="1dp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_undo"
+                android:layout_width="64dp"
+                android:layout_height="35dp"
+                android:paddingTop="7dp"
+                android:src="@drawable/undo" />
+
+            <TextView
+                android:id="@+id/textView_undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp"
+                android:text="未完成"
+                android:textColor="#32A8E1"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_done"
+                android:layout_width="64dp"
+                android:layout_height="35dp"
+                android:paddingTop="7dp"
+                android:src="@drawable/done_1" />
+
+            <TextView
+                android:id="@+id/textView_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp"
+                android:text="已完成"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <!--
+        <LinearLayout
+            android:id="@+id/layout_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_setting"
+                android:layout_width="64dp"
+                android:layout_height="35dp"
+                android:paddingTop="7dp"
+                android:src="@drawable/setting_1" />
+
+            <TextView
+                android:id="@+id/textView_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:paddingBottom="5dp"
+                android:paddingTop="3dp"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </LinearLayout>
+        -->
+    </LinearLayout>
+
+</LinearLayout>
